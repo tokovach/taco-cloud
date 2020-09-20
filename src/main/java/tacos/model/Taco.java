@@ -23,9 +23,6 @@ public class Taco {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
 
-  @Pattern(
-      regexp = "(?<![\\w])(content)(?![\\w])",
-      message = "Name must be at least 5 chars long and not include white spaces.")
   private Date createdAt;
 
   @NotNull
